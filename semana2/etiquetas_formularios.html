@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+	<head>
+		<title> Etiquetas formularios</title>
+	</head>
+	<body>
+		
+		<h1>Investigación sobre todos los tipos de datos admitidos por la etiqueta de html input</h1>
+		
+		<table id="table" border="1">
+		    <caption>Tabla de datos admitidos</caption>
+		    <thead>
+		        <tr>
+		            <th>Etiqueta</th>
+		            <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+		        </tr>
+		    </thead>
+            <tbody>
+		        <tr>
+		            <td>&lt;input type="text"&gt;</td>
+                <td>Son cajas de texto que sirven para ingresar texto como un nombre por ejemplo</td>
+                <td> <p>Nombre: <input type="text" name="nombre" size="40"></p>
+                </td>
+		        </tr>
+		        <tr>
+              <td>&lt;input type="button"&gt;</td>
+		          <td>sirve para poner un boton para que el usuario interactue o realice alguna opcion al precionarlo los botones se crean mediante la etiqueta &lt;input&gt; o mediante la etiqueta &lt;button&gt;. La diferencia entre ellos es que &lt;input &gt; sólo puede contener texto, mientras que &lt;button&gt; permite incluir elementos html como imágenes.</td>
+              <td><input type="button" value="Este botón no hace nada"></td>
+		        </tr>
+		        <tr>
+		          <td>&lt;input type="color"&gt;</td>
+              <td>El control de selector de color se crea mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor color. Permite elegir un color mediante el selector de color proporcionado por el sistema operativo.</td>
+              <td><p>Elija un color:<input type="color" name="colorElegido"></p></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="date"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para fechas (días, meses, años) se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor date. El dato se envía con el formato AAAA-MM-DD donde AAAA es el número de año, MM el número de mes y DD el número de día.</td>
+              <td><p>Fecha: <input type="date" name="fecha"></p></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="datetime-local"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para fechas (días, meses, años, horas y minutos) se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor datetime-local. El dato se envía con el formato AAAA-MM-DDTHH-MM donde AAAA es el número de año, MM el número de mes, DD el número de día, HH son las horas y MM los minutos.</td>
+              <td>Fecha y hora: <input type="datetime-local" name="fechaHora"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="email"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para direcciones de correo electrónico se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor email. Actualmente, los navegadores sólo comprueban que el texto escrito contenga una arroba @ y no contengan caracteres no permitidos, pero no obliga a que las direcciones sean válidas.En los teléfonos móviles, al escribir en una caja de texto de tipo email se adapta ligeramente el teclado de texto, mostrándose el carácter @.</td>
+              <td><p>Correo: <input type="email" name="correo" size="40"></p></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="file"&gt;</td>
+              <td>El selector de archivo se crea mediante una etiqueta &lt;input&gt;cuyo atributo type tiene el valor file, sirve para seleccionar algun archivo de nuestro equipo si es que se quiere cargar algo.</td>
+              <td><input type="file" name="archivo"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="hidden"&gt;</td>
+              <td>El control oculto se crea mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor hidden. Lógicamente, los navegadores no muestran estos controles en la pantalla (aunque pueden verse en el código fuente). Los controles ocultos se pueden utilizar, por ejemplo, para dividir en varias páginas un formulario largo. El problema de dividir en varias páginas es que cada página es independiente de las demás y HTML no permite relacionar una con otra por lo que no se sabría que la información enviada en el segundo formulario completa la del primero (los lenguajes de programación de servidor, como PHP, sí que disponen de mecanismos para relacionar unas páginas con otras, por ejemplo mediante cookies o sesiones).</td>
+              <td><input type="hidden" name="nombre" value="agustin"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="image"&gt;</td>
+              <td>El control de tipo imagen inserta una imagen que funciona como un botón (aunque los navegadores no le dan relieve como a los botones). Al hacer clic en un punto de la imagen se envía el formulario (como si se hubiera pulsado un botón submit) y se envían las coordenadas del punto en el que se ha hecho clic (junto con los valores de los otros controles del formulario).Este control debe incluir siempre el atributo alt (con un valor no vacío), para indicar el texto que deben mostrar los navegadores si la imagen no está disponible. Es importante recordar que esta obligatoriedad no existe en el caso de la etiqueta de imagen &lt;img&gt;, en la que este atributo está aconsejado, pero no es obligatorio.</td>
+              <td><input type="image" name="diana" src="https://www.mclibre.org/consultar/htmlcss/html/ejemplos/formularios/formularios-image.svg" alt="Diana"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="month"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para meses (y años) se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor month. El dato se envía con el formato AAAA-MM donde AAAA es el número de año y MM el número de mes.</td>
+              <td>Mes: <input type="month" name="mes"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="number"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para números se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor number. En principio, los valores admitidos por el control son números enteros.</td>
+              <td>Escriba un número:<input type="number" name="numero"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="password"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para contraseñas se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor password.Al escribir en una caja de contraseña, en vez de letras aparecen puntos gruesos. Es importante señalar que estas cajas no proporcionan ninguna seguridad en la transmisión, simplemente ocultan al usuario lo que este escribe.</td>
+              <td><p>Contraseña:<input type="password" name="contrasena"></p></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="radio"&gt;</td>
+              <td>El elemento &lt;input&gt;, teniendo el valor "radio" en su atributo type, representa una opción que pertenece a un grupo en el que no más de una opción puede ser seleccionada al mismo tiempo. Estos grupos están normalmente conformados por un número de botones de opción, todos compartiendo el mismo valor en el atributo name</td>
+              <td>Sexo:<input type="radio" name="hm" value="h">Hombre<input type="radio" name="hm" value="m"> Mujer</td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="range"&gt;</td>
+              <td>El control de rango se crea mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor range. El rango de valores predeterminado es de 0 a 100 (valores enteros).Los atributos min, max y step permiten elegir respectivamente el valor mínimo, el máximo y el incremento</td>
+              <td>Indique su nivel:<input type="range" name="rango"><p>Indique su nivel (de 1 a 10, de 3 en 3):<input type="range" name="rango"min="1" max="10" step="3"></p></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="reset"&gt;</td>
+              <td>El botón Reset restablece los valores iniciales del formulario. Se crea mediante una etiqueta &lt;input&gt; o &lt;button&gt; cuyo atributo type tiene el valor reset.</td>
+              <td><input type="reset" value="Borrar"></tr>
+            <tr>
+		          <td>&lt;input type="search"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para búsquedas se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor search.La recomendación HTML 5 aclara que la diferencia entre text y search es únicamente de estilo y que el cuadro de búsqueda debería tener el estilo de los cuadros de búsqueda del sistema utilizado.</td>
+              <td>Búsqueda: <input type="search" name="busqueda" size="40"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="submit"&gt;</td>
+              <td>El botón Submit es el que permite al usuario remitir los datos al servidor. Se crea mediante una etiqueta &lt;input&gt; o &lt;button&gt; cuyo atributo type tiene el valor submit.</td>
+              <td><input type="submit" value="Enviar"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="tel"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para números de teléfonos se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor tel.La recomendación HTML 5 aclara que los formatos de números de teléfono siguen formatos tan variados que este control no obliga a utilizar ninguna sintaxis en particular.</td>
+              <td>Teléfono: <input type="tel" name="telefono"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="time"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para tiempos (horas, minutos) se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor time. El dato se envía con el formato HH-MM donde HH son las horas y MM los minutos.</td>
+              <td>Hora: <input type="time" name="hora"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="url"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para direcciones web (URL) se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor url.Actualmente, los navegadores sólo comprueban que el texto escrito empiece por http: o https:, pero no obligan a que las URL sean sintácticamente válidas.</td>
+              <td>URL: <input type="url" name="direccion" size="40"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="week"&gt;</td>
+              <td>Las cajas de texto de una sola línea específicas para semanas (y años) se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor week. El dato se envía con el formato AAAA-WSS donde AAAA es el número de año y SS el número de semana.</td>
+              <td>Semana: <input type="week" name="semana"></td>
+		        </tr>
+            <tr>
+		          <td>&lt;input type="checkbox"&gt;</td>
+              <td>las casillas de verificación se crean mediante una etiqueta &lt;input&gt; cuyo atributo type tiene el valor checkbox.Las casillas de verificación sólo se envían si se han marcado. El atributo value contiene el valor que envía el formulario si la casilla de verificación está marcada. Si el atributo value no está establecido, el formulario envía el valor on.</td>
+              <td><input type="checkbox" name="casilla">Casilla 1</td>
+		        </tr>
+            <tr>
+              <td>&lt;&gt;</td>
+              <td></td>
+              <td></td>
+            </tr>
+ 	        </tbody>
+		</table>	
+	</body>
+</html>
