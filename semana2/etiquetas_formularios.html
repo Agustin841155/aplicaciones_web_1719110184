@@ -127,9 +127,104 @@
               <td><input type="checkbox" name="casilla">Casilla 1</td>
 		        </tr>
             <tr>
-              <td>&lt;&gt;</td>
-              <td></td>
-              <td></td>
+              <td>&lt;select autofocus&gt;</td>
+              <td>Especifica que la lista desplegable debe enfocarse automáticamente cuando se carga la página</td>
+              <td><label for="cars">Choose a car:</label><select name="cars" id="cars" autofocus><option value="volvo">Volvo</option><option value="saab">ferrari</option><option value="opel">BMW</option><option value="audi">Audi</option></select></td>
+            </tr>
+            <tr>
+              <td>&lt;select disabled&gt;</td>
+              <td>Especifica que se debe deshabilitar una lista desplegable</td>
+              <td><label for="cars">Choose a car:</label><select name="cars" id="cars" disabled><option value="volvo">Volvo</option><option value="saab">ferrari</option><option value="mercedes">Mercedes</option><option value="audi">Audi</option></select></td>
+            </tr>
+            <tr>
+              <td>&lt;select form="form_id"&gt;</td>
+              <td>Define a qué formulario pertenece la lista desplegable</td>
+              <td><form action="/action_page.php" id="carform"><label for="fname">Nombre:</label><input type="text" id="fname" name="fname"><input type="submit"></form><label for="cars">Choose a car:</label><select name="cars" id="cars" form="carform"><option value="volvo">Volvo</option><option value="saab">ferrari</option><option value="opel">BMW</option><option value="audi">Audi</option></select></td>
+            </tr>
+            <tr>
+              <td>&lt;select multiple&gt;</td>
+              <td>Especifica que se pueden seleccionar varias opciones a la vez</td>
+              <td><label for="cars">Choose a car:</label><select name="cars" id="cars" multiple><option value="volvo">Volvo</option><option value="saab">ferrari</option><option value="opel">BMW</option><option value="audi">Audi</option></select></td>
+            </tr>
+            <tr>
+              <td>&lt;select name="text"&gt;</td>
+              <td>Define un nombre para la lista desplegable</td>
+              <td><label for="cars">Choose a car:</label><select name="cars" id="cars"><option value="volvo">Volvo</option><option value="saab">Saab</option><option value="opel">Opel</option><option value="audi">Audi</option></select></td>
+            </tr>
+            <tr>
+              <td>&lt;select required&gt;</td>
+              <td>Especifica que el usuario debe seleccionar un valor antes de enviar el formulario.</td>
+              <td><label for="cars">Choose a car:</label><select name="cars" id="cars" required><option value="">None</option><option value="volvo">Volvo</option><option value="ferrari">Saab</option><option value="mercedes">Mercedes</option><option value="audi">Audi</option></select></td>
+            </tr>
+            <tr>
+              <td>&lt;select size="number"&gt;</td>
+              <td>Define el número de opciones visibles en una lista desplegable.</td>
+              <td><label for="cars">Choose a car:</label><select name="cars" id="cars" size="2"><option value="volvo">Volvo</option><option value="BMW">Saab</option><option value="ferrari">Opel</option><option value="audi">Audi</option></select></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea autofocus&gt;</td>
+              <td>Especifica que un área de texto debe enfocarse automáticamente cuando se carga la página</td>
+              <td><textarea autofocus>hola mundo</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea cols="number"&gt;</td>
+              <td>Especifica el ancho visible de un área de texto</td>
+              <td><textarea rows="4" cols="50">hola mundo</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea name="myname" dirname="myname.dir"&gt;&lt;/textarea&gt;</td>
+              <td>Especifica que se enviará la dirección del texto del área de texto</td>
+              <td><form action="/action_page.php">Text:<textarea name="explanation" dirname="explanation.dir"></textarea><input type="submit" value="Submit"></form></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea disabled&gt;</td>
+              <td>Especifica que un área de texto debe estar deshabilitada.</td>
+              <td><textarea disabled>Hola mundo</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea form="form_id"&gt;</td>
+              <td>Especifica a qué formulario pertenece el área de texto</td>
+              <td><form action="/action_page.php" id="usrform">Nombre: <input type="text" name="usrname"><input type="submit"></form><textarea name="comment" form="usrform">Ingrese el texto aqui...</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea maxlength="number"&gt;</td>
+              <td>Especifica el número máximo de caracteres permitidos en el área de texto.</td>
+              <td><textarea maxlength="50">ingrese sus numeros aqui...</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea name="text"&gt;</td>
+              <td>Especifica un nombre para un área de texto.</td>
+              <td><form action="/action_page.php"><textarea name="comment">ingrese el texto...</textarea><input type="submit"></form></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea placeholder="text"&gt;</td>
+              <td>Especifica una pequeña pista que describe el valor esperado de un área de texto.</td>
+              <td><textarea placeholder="Describete a ti mismo aqui..."></textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea readonly&gt;</td>
+              <td>Especifica que un área de texto debe ser de solo lectura</td>
+              <td><textarea readonly>Aqui solo se puede leer</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea required&gt;</td>
+              <td>Especifica que se requiere / debe completar un área de texto</td>
+              <td><form action="/action_page.php"><textarea name="comment" required></textarea><input type="submit"></form></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea rows="number"&gt;</td>
+              <td>Especifica el número visible de líneas en un área de texto.</td>
+              <td><textarea rows="4" cols="50">hola mundo agustin espindola mejia</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;textarea wrap="soft|hard"&gt;</td>
+              <td>Especifica cómo se ajustará el texto de un área de texto cuando se envíe en un formulario</td>
+              <td><textarea rows="2" cols="20" wrap="hard">paginas web los tutorials.</textarea></td>
+            </tr>
+            <tr>
+              <td>&lt;type=radio&gt;</td>
+              <td>El elemento input, teniendo el valor "radio" en su atributo type, representa una opción que pertenece a un grupo en el que no más de una opción puede ser seleccionada al mismo tiempo. Estos grupos están normalmente conformados por un número de botones de opción, todos compartiendo el mismo valor en el atributo name.En contraste con las casillas de verificación, el valor del atributo value juega un papel fundamental para los botones de opción. Cuando el formulario es enviado solo la opción seleccionada es enviada con el formulario al agente procesador, quien no tiene otra forma de decidir qué opción ha sido seleccionada más que mirando al valor (value) del control enviado. Este es el motivo por el cual el atributo value de cada opción debe ser único en el grupo.</td>
+              <td><form action="../../form-result.php" method="post" target="_blank"><p>Empleo actual:<br><input type="radio" name="empleoactual" value="tiempocompleto"> Tiempo completo<br><input type="radio" name="empleoactual" value="mediodia"> Medio día<br><input type="radio" name="empleoactual" value="sinempleo"> Sin empleo</p><p><input type="submit" value="Enviar datos"></p></form></td>
             </tr>
  	        </tbody>
 		</table>	
